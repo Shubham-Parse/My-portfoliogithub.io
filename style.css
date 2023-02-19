@@ -660,7 +660,7 @@ button[type="submit"]:hover {
     
 
     .container {
-        height: 185vh;
+        height: 115vh;
     }
 
     #aboutme {
@@ -716,7 +716,7 @@ button[type="submit"]:hover {
         justify-content: center;
         align-items: center;
         height: 60vh;
-        border: 2px solid white;
+        /* border: 2px solid white; */
 
     }
 
