@@ -353,6 +353,7 @@ button {
     align-items: center;
     flex-direction: column;
     gap: 2.5rem;
+    flex-wrap: wrap;
 }
 
 .project1-2 {
@@ -363,6 +364,7 @@ button {
     flex-direction: row;
     gap: 10%;
     width: 100%;
+
 }
 
 .project1 img {
@@ -626,9 +628,11 @@ button[type="submit"]:hover {
 }
 
 .contact-info h3 {
-    /* margin: 10px; */
+    margin: auto;
+    width: 100%;
     margin-top: 10;
-    padding: 8px;
+    text-align: center;
+    padding: 5px;
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Inter', sans-serif;
 
@@ -661,6 +665,25 @@ button[type="submit"]:hover {
 
 
 /* --------------------------------css for resopnsiveness------------------------- */
+@media only screen and (max-width: 660px) {
+    .project1-2 {
+        flex-wrap: wrap;
+    }
+
+    .project3-4 {
+        flex-wrap: wrap;
+    }
+
+    .project1-2 {
+        gap: 4px;
+        /* margin: 25px; */
+        /* padding: 25px; */
+        /* padding-left: 20px; */
+        /* padding-right: 20px; */
+    }
+}
+
+
 
 @media only screen and (max-width: 600px) {
 
@@ -739,46 +762,91 @@ button[type="submit"]:hover {
     .contact-info h3 {
         font-size: 15px;
     }
-}
 
-@media only screen and (max-width: 340px) {
-    .header-text h1 {
-        font-size: 25px;
+    .project1-2 {
+        flex-wrap: wrap;
     }
 
-    #aboutme {
-        margin-top: 500px;
+    .project3-4 {
+        flex-wrap: wrap;
+    }
 
-    }
-    .skill-list img {
-        width: 85px;
-        height: 85px;
-    }
     .contact-sec {
         display: flex;
-        margin-top: 50px;
+        flex-wrap: wrap;
+
+        /* margin-top: 50px; */
+        margin-bottom: 20px;
         /* display: flex; */
         /* justify-content: space-evenly; */
         /* align-items: center; */
         flex-direction: column;
-        gap: 10%;
+        gap: 40%;
         width: 100%;
-        font-family: Arial, sans
-}
-form{
-    margin-top: 25px;
-}
-element.style{
-    height: 0px;
-}
-    .contact-info h3 {
-        font-size: 13px;
+        font-family: Arial, sans-serif;
+        /* padding: 20px;     */
     }
-}
+
+    /* .contact-sec h3 {
+padding: 20px;    }
+} */
+    form {
+        margin-top: 25px;
+    }
 
 
-@media only screen and (max-width:485px){
-    .contact-info h3 {
-        font-size: 13px;
+
+    @media only screen and (max-width:485px) {
+        .contact-info h3 {
+            font-size: 13px;
+        }
+    }
+
+    @media only screen and (max-width: 340px) {
+        .header-text h1 {
+            font-size: 25px;
+        }
+
+        #aboutme {
+            margin-top: 500px;
+
+        }
+
+        .skill-list img {
+            width: 85px;
+            height: 85px;
+        }
+
+        .contact-sec {
+            display: flex;
+            flex-wrap: wrap;
+
+            /* margin-top: 50px; */
+            /* display: flex; */
+            /* justify-content: space-evenly; */
+            /* align-items: center; */
+            flex-direction: column;
+            gap: 10%;
+            width: 100%;
+            font-family: Arial, sans f
+        }
+
+        form {
+            margin-top: 25px;
+        }
+
+        element.style {
+            height: 0px;
+        }
+
+        .contact-info h3 {
+            font-size: 13px;
+            margin: auto;
+            padding-left: 25px;
+        }
+
+        .clearfix button {
+            float: none;
+        }
     }
 }
