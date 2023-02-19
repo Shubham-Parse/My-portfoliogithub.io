@@ -617,6 +617,7 @@ button[type="submit"]:hover {
     font-family: 'Inter', sans-serif;
     /* padding: 10px; */
     margin: 20px;
+    text-align: center;
 
 }
 
@@ -752,6 +753,7 @@ padding: 20px;    }
 } */
     form {
         margin-top: 25px;
+        width: 75%;
     }
 
 
