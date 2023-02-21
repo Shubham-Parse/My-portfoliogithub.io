@@ -653,7 +653,7 @@ button[type="submit"]:hover {
 
 
 /* --------------------------------css for resopnsiveness------------------------- */
-nav .fa-solid {
+.fa-solid {
     display: none;
     /* right: -200px; */
 }
