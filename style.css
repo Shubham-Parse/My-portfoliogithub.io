@@ -653,8 +653,9 @@ button[type="submit"]:hover {
 
 
 /* --------------------------------css for resopnsiveness------------------------- */
-.fa-solid {
-    display: none;
+nav .fa-solid {
+    display: none; 
+     /* yachatch kand ahe kahi tari */ 
     /* right: -200px; */
 }
 
