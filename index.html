@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,18 +11,22 @@
 
 
 </head>
+
 <body>
-    <div class="container">
+    <div id="header" class="container">
         <div class="navbar">
             <nav>
                 <img src="images/logo2.png" alt="shubham" class="logo">
-                <ul>
-                    <li><a href="/"> Home </a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/skill.html">Skill</a></li>
-                    <li><a href="/project.html">Projects</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header"> Home </a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#skills">Skill</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
                 </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
             </nav>
         </div>
         <div class="side">
@@ -41,7 +46,7 @@
 
                 </div>
                 <div class="aboutme-col2">
-                    <h1 class="sub-title active-link">About Me  </h1>
+                    <h1 class="sub-title active-link">About Me </h1>
                     <p class="myinfo">Hey I'm Shubham and I'm a student of Btech in Computer Science and Engineering.
                         I'm a Frontend Developer From India. I'm deeply well passionate about Frontend Development and
                         love to create Websites. Other than Frontend Development I like to read books, watch anime and
@@ -87,7 +92,7 @@
             </div>
             <div class="items" id="source-code">
                 <div>
-                    <button class="button-85" role="button">Button </button>
+                    <button class="button-85" role="button">Source  </button>
                 </div>
             </div>
             <div class="items" id="demo">
@@ -107,7 +112,7 @@
             </div>
             <div class="items" id="source-code">
                 <div>
-                    <button class="button-85" role="button">Button </button>
+                    <button class="button-85" role="button">Source  </button>
                 </div>
             </div>
             <div class="items" id="demo">
@@ -129,7 +134,7 @@
             </div>
             <div class="items" id="source-code">
                 <div>
-                    <button class="button-85" role="button">Button</button>
+                    <button class="button-85" role="button">Source </button>
                 </div>
             </div>
             <div class="items" id="demo">
@@ -150,7 +155,7 @@
             </div>
             <div class="items" id="source-code">
                 <div>
-                    <button class="button-85" role="button">Button</button>
+                    <button class="button-85" role="button">Source </button>
                 </div>
             </div>
             <div class="items" id="demo">
@@ -186,10 +191,12 @@
             <div class="clearfix">
                 <button type="submit">Submit</button>
             </div>
-        </form>
-    </div>
+        <!-- <span id="msg"> hello</span> -->
 
-    <!-- <div class="contact-info">
+        </form>
+        <!-- <span id="msg"> hello</span> -->
+    </div>
+    <div class="contact-info">
         <h3>Discuss something about Front End or want to say hi, just DM me.</h3>
         <h3>Open for work from home apportunities: Yes</h3>
         <div>
@@ -199,10 +206,21 @@
         <div>
             <img src="/images/tod2.png" alt="">
         </div>
-        <div>
+        <div class="footer">
             <p>
                 Made with ❤ by Shubham Parse <a href="">Top</a>
             </p>
-        </div> -->
-    <!-- </div> -->
+        </div>
+    </div>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
 </body>
