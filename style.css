@@ -6,7 +6,7 @@
 * {
     padding: 0px;
     margin: 0px;
-    
+
 }
 
 html {
@@ -645,7 +645,8 @@ button[type="submit"]:hover {
     /* width: 50px; */
     font-size: 25px;
 }
-.footer{
+
+.footer {
     width: 100%;
     background-color: #222221;
     margin-top: 10px;
@@ -654,14 +655,15 @@ button[type="submit"]:hover {
 
 /* --------------------------------css for resopnsiveness------------------------- */
 nav .fa-solid {
-    display: none; 
-     /* yachatch kand ahe kahi tari */ 
+    display:none ;
+    /* yachatch kand ahe kahi tari */
     /* right: -200px; */
 }
 
 @media only screen and (max-width: 660px) {
     .fa-solid {
-        display: block;
+
+        display:block;
         font-size: 25px;
     }
 
