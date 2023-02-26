@@ -667,25 +667,29 @@ nav .fa-solid {
     }
 
     nav ul {
-        background: #0a0808;
+        background: #a94747;
         position: fixed;
         top: 0;
         right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
+        z-index: 2;
+        transition: 0.5s;
+
     }
 
     nav ul li {
         display: block;
         margin: 25px;
     }
-nav ul .fa-solid{
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-}
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
 
     .aboutme-col1 {
         /* flex-basis: 100%; */
