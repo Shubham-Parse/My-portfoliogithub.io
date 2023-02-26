@@ -654,42 +654,38 @@ button[type="submit"]:hover {
 
 
 /* --------------------------------css for resopnsiveness------------------------- */
+
 nav .fa-solid {
-    display:none ;
-    /* yachatch kand ahe kahi tari */
-    /* right: -200px; */
+    display: none;
 }
 
 @media only screen and (max-width: 660px) {
-    .fa-solid {
 
-        display:block;
+    nav .fa-solid {
+        display: block;
         font-size: 25px;
     }
 
     nav ul {
-        background: #1f231b;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
+        background: #0a0808;
         position: fixed;
         top: 0;
         right: -200px;
-        z-index: 2;
-        transition: 0.5s;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
     }
 
     nav ul li {
         display: block;
         margin: 25px;
     }
-
-    nav ul .fa-solid {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
+nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
 
     .aboutme-col1 {
         /* flex-basis: 100%; */
